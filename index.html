@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebook - Trang chủ</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">📚 Ebook</div>
+        <nav>
+            <a href="#" style="color: #2563eb;">Trang chủ</a>
+            <a href="#">Thư viện</a>
+            <a href="#">Thể loại</a>
+            <a href="#">Yêu thích</a>
+        </nav>
+        <div class="user-info">
+            <span>Chào, Nguyễn Văn A</span>
+            <button class="logout-btn" onclick="logout()">Đăng xuất</button>
+        </div>
+    </header>
+    
+    <div class="main">
+        <div style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
+            <h1 class="welcome-title">
+                Chào mừng trở lại! 👋
+            </h1>
+            <p style="font-size: 1.2rem; color: #64748b; margin-bottom: 50px;">Khám phá hàng ngàn cuốn sách hay nhất từ mọi thể loại.</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px;">
+                <div class="book-card">
+                    <div style="font-size: 52px; margin-bottom: 20px;">🔥</div>
+                    <h3 style="margin-bottom: 12px; color: #1e293b; font-size: 22px;">Sách hot tuần này</h3>
+                    <p style="color: #64748b; line-height: 1.5;">Những cuốn sách đang được cộng đồng săn đón và đọc nhiều nhất.</p>
+                </div>
+                <div class="book-card">
+                    <div style="font-size: 52px; margin-bottom: 20px;">🌟</div>
+                    <h3 style="margin-bottom: 12px; color: #1e293b; font-size: 22px;">Sách mới ra mắt</h3>
+                    <p style="color: #64748b; line-height: 1.5;">Nhận ngay ưu đãi giảm đến 50% dành riêng cho thành viên mới.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
