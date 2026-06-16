@@ -1,0 +1,142 @@
+.top-banner {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 18% 120%, #ff7b3d 0 16%, transparent 17%),
+    radial-gradient(circle at 82% -20%, #ff5c5c 0 18%, transparent 19%),
+    linear-gradient(90deg, #ff0303, #b90000);
+  color: #fff7d7;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.top-banner__button {
+  border: 0;
+  border-radius: 999px;
+  padding: 9px 18px;
+  color: #c22300;
+  background: linear-gradient(#ffea58, #ffc400);
+  font-weight: 900;
+  transition: transform .24s ease;
+}
+
+.top-banner__button:hover {
+  transform: translateY(-2px);
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  min-height: 88px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 0 max(40px, calc((100vw - var(--container)) / 2));
+  background: rgba(16, 17, 19, .94);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255,255,255,.05);
+}
+
+.site-logo {
+  color: var(--green);
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  white-space: nowrap;
+}
+
+.site-nav a {
+  position: relative;
+  color: #f2f2f2;
+  font-weight: 800;
+  transition: color .24s ease;
+}
+
+.site-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -13px;
+  width: 0;
+  height: 3px;
+  border-radius: 99px;
+  background: var(--green);
+  transition: width .24s ease;
+}
+
+.site-nav a:hover::after,
+.site-nav a.is-active::after {
+  width: 100%;
+}
+
+.site-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.search-icon {
+  width: 46px;
+  height: 46px;
+  position: relative;
+  border: 0;
+  background: transparent;
+}
+
+.search-icon::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  inset: 9px auto auto 7px;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.search-icon::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 3px;
+  right: 8px;
+  bottom: 10px;
+  border-radius: 99px;
+  background: white;
+  transform: rotate(45deg);
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 28px;
+  margin: 56px 0 22px;
+}
+
+.section-heading--compact {
+  margin-top: 0;
+}
+
+.section-heading h2 {
+  margin: 8px 0 6px;
+  font-size: clamp(28px, 4vw, 42px);
+  letter-spacing: -.04em;
+}
+
+.section-heading p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}

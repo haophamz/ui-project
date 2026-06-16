@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WakaPro Ebook | Tải Ebook</title>
+
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/layout.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+  <link rel="stylesheet" href="../assets/css/pages/downloads.css" />
+  <link rel="stylesheet" href="../assets/css/responsive.css" />
+</head>
+
+<body>
+  <div id="topBanner"></div>
+  <div id="siteHeader"></div>
+
+  <main class="page page-downloads">
+    <section class="download-hero reveal">
+      <div>
+        <span class="eyebrow">UC08 · Tải Ebook</span>
+        <h1>Tải ebook an toàn, rõ trạng thái và có kiểm tra quyền.</h1>
+        <p>
+          Trang tải xuống mô phỏng quy trình kiểm tra quyền truy cập, chuẩn bị file,
+          hiển thị tiến trình và thông báo kết quả cho người dùng.
+        </p>
+      </div>
+    </section>
+
+    <section class="download-card reveal">
+      <div class="download-card__header">
+        <div>
+          <span class="badge badge--download">Download Center</span>
+          <h2 id="downloadTitle">Chưa chọn ebook</h2>
+          <p id="downloadMessage">Chọn ebook từ thư viện hoặc nhập trực tiếp ID trên URL.</p>
+        </div>
+
+        <button class="btn btn--primary" id="startDownload">Bắt đầu tải</button>
+      </div>
+
+      <div class="download-progress">
+        <span id="downloadProgress"></span>
+      </div>
+
+      <div class="download-steps" id="downloadSteps">
+        <div class="download-step is-active">1. Kiểm tra quyền</div>
+        <div class="download-step">2. Chuẩn bị file</div>
+        <div class="download-step">3. Tải xuống</div>
+        <div class="download-step">4. Hoàn tất</div>
+      </div>
+    </section>
+
+    <section class="download-suggest reveal">
+      <div class="section-heading section-heading--compact">
+        <div>
+          <span class="eyebrow">Gợi ý tải xuống</span>
+          <h2>Ebook có thể tải</h2>
+        </div>
+      </div>
+
+      <div class="mini-book-grid" id="miniBookGrid"></div>
+    </section>
+  </main>
+
+  <div id="toast"></div>
+
+  <script src="../assets/js/data/books.js"></script>
+  <script src="../assets/js/components/layout.js"></script>
+  <script src="../assets/js/components/toast.js"></script>
+  <script src="../assets/js/pages/downloads.js"></script>
+</body>
+</html>

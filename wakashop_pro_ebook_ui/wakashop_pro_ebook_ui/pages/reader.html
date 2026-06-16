@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WakaPro Ebook | Reader</title>
+
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+  <link rel="stylesheet" href="../assets/css/pages/reader.css" />
+  <link rel="stylesheet" href="../assets/css/responsive.css" />
+</head>
+
+<body class="reader-body">
+  <header class="reader-header">
+    <a href="../index.html" class="reader-header__back">←</a>
+
+    <div>
+      <strong id="readerTitle">Reader</strong>
+      <small id="readerMeta">Chế độ đọc ebook</small>
+    </div>
+
+    <div class="reader-header__tools">
+      <button id="vipSwitch" class="btn btn--small btn--ghost">Bật VIP demo</button>
+      <button id="fontDown" class="reader-tool">A-</button>
+      <button id="fontUp" class="reader-tool">A+</button>
+    </div>
+  </header>
+
+  <main class="reader-shell">
+    <aside class="reader-sidebar">
+      <span class="eyebrow">Mục lục</span>
+      <div id="readerChapters"></div>
+    </aside>
+
+    <article class="reader-content" id="readerContent">
+      <div id="readerLocked"></div>
+
+      <div id="readerText">
+        <span class="eyebrow">Chương 01</span>
+        <h1 id="chapterTitle">Đang tải chương...</h1>
+
+        <p>
+          Đây là màn hình đọc ebook được thiết kế riêng cho UC07. Nội dung được căn lề rộng,
+          khoảng cách dòng thoáng và hỗ trợ tăng giảm cỡ chữ.
+        </p>
+
+        <p>
+          Với ebook VIP hoặc Hội viên, hệ thống cần kiểm tra quyền truy cập trước khi cho phép
+          người dùng đọc toàn bộ nội dung. Nếu chưa đủ quyền, giao diện sẽ hiển thị lớp khóa.
+        </p>
+
+        <p>
+          Trong hệ thống thật, trang này có thể kết nối API để tải nội dung chương, lưu tiến độ đọc,
+          đánh dấu trang, highlight và đồng bộ trên nhiều thiết bị.
+        </p>
+      </div>
+    </article>
+  </main>
+
+  <div id="toast"></div>
+
+  <script src="../assets/js/data/books.js"></script>
+  <script src="../assets/js/components/toast.js"></script>
+  <script src="../assets/js/pages/reader.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+body.reader-body {
+  background: #fffaf0;
+  color: #151515;
+}
+
+.reader-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 32px;
+  border-bottom: 1px solid #eadfca;
+  background: rgba(255, 250, 240, .9);
+  backdrop-filter: blur(16px);
+}
+
+.reader-header__back,
+.reader-tool {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #e2d5bd;
+  border-radius: 14px;
+  background: white;
+  color: #151515;
+  font-weight: 900;
+}
+
+.reader-header small {
+  display: block;
+  margin-top: 2px;
+  color: #777;
+}
+
+.reader-header__tools {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.reader-header .btn--ghost {
+  color: #151515;
+  background: white;
+  border-color: #e2d5bd;
+}
+
+.reader-shell {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 860px);
+  gap: 42px;
+  width: min(1240px, calc(100% - 64px));
+  margin: 0 auto;
+  padding: 42px 0 80px;
+}
+
+.reader-sidebar {
+  position: sticky;
+  top: 110px;
+  height: fit-content;
+  padding: 22px;
+  border: 1px solid #eadfca;
+  border-radius: 24px;
+  background: white;
+}
+
+.reader-sidebar .eyebrow {
+  color: var(--green-dark);
+}
+
+.reader-chapter {
+  width: 100%;
+  display: block;
+  border: 0;
+  border-radius: 14px;
+  margin-top: 10px;
+  padding: 12px;
+  color: #151515;
+  background: #fff6e7;
+  text-align: left;
+  font-weight: 800;
+}
+
+.reader-chapter.is-active {
+  background: #19c7a3;
+  color: white;
+}
+
+.reader-content {
+  position: relative;
+  min-height: 620px;
+  padding: 54px clamp(30px, 6vw, 76px);
+  border: 1px solid #eadfca;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 0 28px 80px rgba(87, 64, 28, .12);
+  font-size: 19px;
+  line-height: 1.95;
+}
+
+.reader-content .eyebrow {
+  color: var(--green-dark);
+}
+
+.reader-content h1 {
+  margin: 10px 0 26px;
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.05;
+  letter-spacing: -.05em;
+}
+
+.reader-lock {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  border-radius: 30px;
+  background: rgba(255, 250, 240, .88);
+  backdrop-filter: blur(10px);
+}
+
+.reader-lock__box {
+  max-width: 520px;
+  padding: 28px;
+  border: 1px solid #eadfca;
+  border-radius: 24px;
+  background: white;
+  text-align: center;
+  box-shadow: 0 20px 70px rgba(87, 64, 28, .16);
+}
+
+.reader-lock__box h2 {
+  margin: 0 0 10px;
+  font-size: 30px;
+}
+
+.reader-lock__box p {
+  color: #666;
+  line-height: 1.65;
+}

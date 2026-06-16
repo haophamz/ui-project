@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WakaPro Ebook | Trang chủ</title>
+
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/layout.css" />
+  <link rel="stylesheet" href="./assets/css/components.css" />
+  <link rel="stylesheet" href="./assets/css/pages/home.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+</head>
+
+<body>
+  <div id="topBanner"></div>
+  <div id="siteHeader"></div>
+
+  <main class="page page-home">
+    <section class="hero">
+      <div class="hero__content reveal">
+        <span class="eyebrow">Ebook The Gioi Sach</span>
+        <h1>Thư viện sách điện tử hiện đại cho người đọc số.</h1>
+        
+
+        <div class="hero__actions">
+          <a href="#library" class="btn btn--primary">Khám phá thư viện</a>
+          <a href="./pages/downloads.html" class="btn btn--ghost">Xem tải xuống</a>
+        </div>
+      </div>
+
+      <div class="hero__preview reveal">
+        <div class="preview-book cover cover--green">
+          <div class="cover__shine"></div>
+          <h3>Quy tắc<br />kỷ luật<br />tự thân</h3>
+        </div>
+
+        <div class="preview-panel">
+          <span class="badge badge--member">Hội viên</span>
+          <h3>Tiếp tục đọc</h3>
+          <p>Chương 03 · 72% hoàn thành</p>
+          <div class="progress">
+            <span style="width: 72%"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-heading reveal" id="library">
+      <div>
+        <span class="eyebrow">Xem Ebook</span>
+        <h2>Sách mới mỗi ngày - dành cho Hội viên!</h2>
+      </div>
+
+      <div class="library-toolbar">
+        <label class="field">
+          <span>Tìm kiếm</span>
+          <input id="searchInput" type="search" placeholder="Nhập tên sách hoặc tác giả..." />
+        </label>
+
+        <label class="field">
+          <span>Loại sách</span>
+          <select id="typeFilter">
+            <option value="all">Tất cả</option>
+            <option value="member">Hội viên</option>
+            <option value="vip">VIP</option>
+            <option value="free">Miễn phí</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <section class="library-status reveal">
+      <p id="resultInfo">Đang tải danh sách sách...</p>
+      <div class="view-tabs">
+        <button class="view-tabs__item is-active">Tất cả sách</button>
+        <button class="view-tabs__item">Đọc nhiều</button>
+        <button class="view-tabs__item">Mới cập nhật</button>
+      </div>
+    </section>
+
+    <section class="book-grid" id="bookGrid"></section>
+
+    <nav class="pagination" id="pagination" aria-label="Phân trang sách"></nav>
+
+    <section class="usecase-grid reveal">
+  <article class="usecase-card">
+    <span>GÓI VIP</span>
+    <h3>VIP 1 tháng</h3>
+    <p>Phù hợp để dùng thử. Người dùng có thể đọc ebook VIP và tải ebook trong 30 ngày.</p>
+    <a href="./pages/downloads.html" class="btn btn--primary">Đăng ký ngay</a>
+  </article>
+
+  <article class="usecase-card">
+    <span>GÓI TIẾT KIỆM</span>
+    <h3>VIP 3 tháng</h3>
+    <p>Lựa chọn cân bằng cho người đọc thường xuyên, sử dụng quyền VIP liên tục trong 90 ngày.</p>
+    <a href="./pages/downloads.html" class="btn btn--primary">Đăng ký ngay</a>
+  </article>
+
+  <article class="usecase-card">
+    <span>GÓI TỐT NHẤT</span>
+    <h3>VIP 1 năm</h3>
+    <p>Dành cho người đọc lâu dài, trải nghiệm thư viện ebook VIP trong 12 tháng với nhiều quyền lợi hơn.</p>
+    <a href="./pages/downloads.html" class="btn btn--primary">Đăng ký ngay</a>
+  </article>
+</section>
+  </main>
+
+  <div id="toast"></div>
+
+  <script src="./assets/js/data/books.js"></script>
+  <script src="./assets/js/components/layout.js"></script>
+  <script src="./assets/js/components/toast.js"></script>
+  <script src="./assets/js/pages/home.js"></script>
+</body>
+</html>

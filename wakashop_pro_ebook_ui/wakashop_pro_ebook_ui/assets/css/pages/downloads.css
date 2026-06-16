@@ -1,0 +1,112 @@
+.download-hero {
+  min-height: 310px;
+  display: flex;
+  align-items: center;
+}
+
+.download-hero h1 {
+  max-width: 980px;
+  margin: 14px 0;
+  font-size: clamp(44px, 5.5vw, 78px);
+  line-height: .96;
+  letter-spacing: -.06em;
+}
+
+.download-hero p {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.download-card {
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at top right, rgba(25,199,163,.18), transparent 30rem),
+    var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.download-card__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+  align-items: center;
+}
+
+.download-card h2 {
+  margin: 14px 0 6px;
+  font-size: 34px;
+}
+
+.download-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.download-progress {
+  margin-top: 26px;
+}
+
+.download-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.download-step {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface-2);
+  color: var(--muted);
+  font-weight: 900;
+}
+
+.download-step.is-active {
+  color: #111;
+  background: var(--yellow);
+}
+
+.download-step.is-done {
+  color: white;
+  background: linear-gradient(135deg, var(--green), var(--green-dark));
+}
+
+.download-suggest {
+  margin-top: 58px;
+}
+
+.mini-book-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.mini-book {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+
+.mini-book__cover {
+  height: 240px;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+}
+
+.mini-book__cover h3 {
+  font-size: 24px;
+}
+
+.mini-book h4 {
+  min-height: 48px;
+  margin: 16px 0 10px;
+  font-size: 18px;
+}

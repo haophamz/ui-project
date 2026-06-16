@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WakaPro Ebook | Chi tiết sách</title>
+
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/layout.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+  <link rel="stylesheet" href="../assets/css/pages/detail.css" />
+  <link rel="stylesheet" href="../assets/css/responsive.css" />
+</head>
+
+<body>
+  <div id="topBanner"></div>
+  <div id="siteHeader"></div>
+
+  <main class="page page-detail">
+    <a class="back-link" href="../index.html">← Quay lại thư viện</a>
+
+    <section class="detail-layout reveal" id="detailLayout"></section>
+
+    <section class="chapter-section reveal">
+      <div class="section-heading section-heading--compact">
+        <div>
+          <span class="eyebrow">Danh sách chương</span>
+          <h2>Nội dung ebook</h2>
+        </div>
+      </div>
+
+      <div class="chapter-list" id="chapterList"></div>
+    </section>
+  </main>
+
+  <div id="toast"></div>
+
+  <script src="../assets/js/data/books.js"></script>
+  <script src="../assets/js/components/layout.js"></script>
+  <script src="../assets/js/components/toast.js"></script>
+  <script src="../assets/js/pages/detail.js"></script>
+</body>
+</html>
