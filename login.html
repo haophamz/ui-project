@@ -11,12 +11,12 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-light d-flex flex-column min-vh-100">
+<body class="bg-dark text-white d-flex flex-column min-vh-100" style="background: radial-gradient(circle at center, #111827 0%, #09090b 100%);">
 
     <!-- Header / Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-        <div class="container">
-            <a class="navbar-brand fs-3" href="index.html">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary border-opacity-10 py-3">
+        <div class="container text-center">
+            <a class="navbar-brand fs-3 fw-bold mx-auto text-highlight" href="index.html">
                 <i class="bi bi-book-half"></i> BookShop
             </a>
         </div>
@@ -25,29 +25,29 @@
     <!-- Main Container -->
     <div class="container my-auto py-5">
         <div class="row justify-content-center">
-            <div class="col-md-5">
-                <div class="card p-4 shadow-sm bg-white">
+            <div class="col-md-5 col-lg-4">
+                <div class="glass-card p-5 shadow-lg border border-secondary border-opacity-25 bg-black bg-opacity-30">
                     <div class="text-center mb-4">
-                        <i class="bi bi-person-circle fs-1 text-primary"></i>
-                        <h3 class="fw-bold mt-2" id="form-title">Đăng Nhập Tài Khoản</h3>
-                        <p class="text-muted" id="form-subtitle">Đăng nhập để tiếp tục dịch vụ</p>
+                        <i class="bi bi-person-circle fs-1 text-highlight"></i>
+                        <h3 class="fw-bold mt-3 text-white" id="form-title" style="font-family: var(--font-outfit);">Đăng Nhập Tài Khoản</h3>
+                        <p class="text-muted small" id="form-subtitle">Chào mừng bạn trở lại với kho sách</p>
                     </div>
                     
                     <form id="login-form">
                         <div class="mb-3">
-                            <label for="email" class="form-label">Địa chỉ Email</label>
-                            <input type="email" class="form-control" id="email" required placeholder="name@example.com" value="demomember@gmail.com">
+                            <label for="email" class="form-label text-muted small fw-semibold">ĐỊA CHỈ EMAIL</label>
+                            <input type="email" class="form-control form-control-dark" id="email" required placeholder="name@example.com" value="demomember@gmail.com">
                         </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Mật khẩu</label>
-                            <input type="password" class="form-control" id="password" required placeholder="••••••••" value="123456">
+                        <div class="mb-4">
+                            <label for="password" class="form-label text-muted small fw-semibold">MẬT KHẨU</label>
+                            <input type="password" class="form-control form-control-dark" id="password" required placeholder="••••••••" value="123456">
                         </div>
-                        <button type="submit" class="btn btn-primary w-100 py-2 mt-2">Đăng Nhập</button>
+                        <button type="submit" class="btn btn-waka w-100 py-3 fw-bold">ĐĂNG NHẬP</button>
                     </form>
 
-                    <div class="text-center mt-3">
-                        <span class="text-muted">Chưa có tài khoản?</span>
-                        <a href="#" id="toggle-form-link" class="text-decoration-none">Đăng ký ngay</a>
+                    <div class="text-center mt-4 border-top border-secondary border-opacity-10 pt-3">
+                        <span class="text-muted small">Chưa có tài khoản?</span>
+                        <a href="#" id="toggle-form-link" class="text-highlight small text-decoration-none ms-1">Đăng ký ngay</a>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-white border-top py-4 mt-auto">
+    <footer class="bg-dark bg-opacity-40 border-top border-secondary border-opacity-10 py-4 mt-auto">
         <div class="container text-center">
             <p class="text-muted mb-0">&copy; 2026 BookShop. Bản quyền giao diện thuộc về đồ án TMDT.</p>
         </div>
@@ -85,7 +85,7 @@
                     toggleLink.textContent = 'Đã có tài khoản? Đăng nhập';
                 } else {
                     formTitle.textContent = 'Đăng Nhập Tài Khoản';
-                    formSubtitle.textContent = 'Đăng nhập để tiếp tục dịch vụ';
+                    formSubtitle.textContent = 'Chào mừng bạn trở lại với kho sách';
                     toggleLink.textContent = 'Chưa có tài khoản? Đăng ký ngay';
                 }
             }

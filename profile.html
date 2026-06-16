@@ -11,15 +11,15 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-light d-flex flex-column min-vh-100">
+<body class="bg-dark text-white d-flex flex-column min-vh-100" style="background: radial-gradient(circle at top, #111827 0%, #09090b 100%);">
 
     <!-- Header / Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary border-opacity-10 py-3 sticky-top">
         <div class="container">
-            <a class="navbar-brand fs-3" href="index.html">
+            <a class="navbar-brand fs-3 fw-bold text-highlight" href="index.html">
                 <i class="bi bi-book-half"></i> BookShop
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -40,19 +40,19 @@
         <div class="row">
             <!-- Left Side: User Info -->
             <div class="col-md-4 mb-4">
-                <div class="card p-4 shadow-sm bg-white text-center">
+                <div class="glass-card p-4 text-center border-secondary border-opacity-25 bg-black bg-opacity-20 shadow-lg">
                     <div class="mb-3">
-                        <i class="bi bi-person-badge-fill text-primary" style="font-size: 4rem;"></i>
+                        <i class="bi bi-person-badge-fill text-highlight" style="font-size: 4.5rem; filter: drop-shadow(0 0 10px var(--primary-glow));"></i>
                     </div>
-                    <h4 class="fw-bold mb-1" id="profile-name">...</h4>
-                    <p class="text-muted small mb-3" id="profile-email">...</p>
+                    <h4 class="fw-bold mb-1 text-white" id="profile-name" style="font-family: var(--font-outfit);">...</h4>
+                    <p class="text-muted small mb-4" id="profile-email">...</p>
                     
-                    <hr>
+                    <hr class="border-secondary border-opacity-15">
                     
                     <div class="mb-2">
-                        <span class="text-muted d-block small mb-1">LOẠI TÀI KHOẢN</span>
+                        <span class="text-muted d-block small mb-2 uppercase fw-semibold">LOẠI TÀI KHOẢN</span>
                         <div id="profile-vip-status">
-                            <!-- Populated dynamically -->
+                            <!-- Populated dynamically by profile.js -->
                         </div>
                     </div>
                 </div>
@@ -60,12 +60,14 @@
 
             <!-- Right Side: Transaction History -->
             <div class="col-md-8">
-                <div class="card p-4 shadow-sm bg-white">
-                    <h4 class="fw-bold border-bottom pb-2 mb-4"><i class="bi bi-clock-history text-primary"></i> Lịch Sử Giao Dịch Đăng Ký VIP</h4>
+                <div class="glass-card p-4 border-secondary border-opacity-25 bg-black bg-opacity-20 shadow-lg">
+                    <h4 class="fw-bold border-bottom border-secondary border-opacity-10 pb-3 mb-4 text-white" style="font-family: var(--font-outfit);">
+                        <i class="bi bi-clock-history text-highlight"></i> Lịch Sử Giao Dịch Đăng Ký VIP
+                    </h4>
                     
                     <div class="table-responsive">
-                        <table class="table table-hover align-middle">
-                            <thead class="table-light">
+                        <table class="table waka-table table-hover align-middle m-0">
+                            <thead>
                                 <tr>
                                     <th scope="col">Mã giao dịch</th>
                                     <th scope="col">Gói dịch vụ</th>
@@ -86,7 +88,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-white border-top py-4 mt-auto">
+    <footer class="bg-dark bg-opacity-40 border-top border-secondary border-opacity-10 py-4 mt-auto">
         <div class="container text-center">
             <p class="text-muted mb-0">&copy; 2026 BookShop. Bản quyền giao diện thuộc về đồ án TMDT.</p>
         </div>

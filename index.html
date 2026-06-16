@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ - Website Bán sách & Hội viên VIP</title>
+    <title>Mua Hội Viên - BookShop</title>
     <!-- Bootstrap 5 CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons CDN -->
@@ -14,12 +14,12 @@
 <body>
 
     <!-- Header / Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary border-opacity-25 sticky-top py-3">
         <div class="container">
-            <a class="navbar-brand fs-3" href="index.html">
+            <a class="navbar-brand fs-3 fw-bold text-highlight" href="index.html">
                 <i class="bi bi-book-half"></i> BookShop
             </a>
-            <button class="navbar-collapse-toggle navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -31,7 +31,7 @@
                         <a class="nav-link" href="#books">Kho Sách</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-warning-emphasis fw-bold" href="#packages"><i class="bi bi-gem"></i> Gói VIP</a>
+                        <a class="nav-link text-gold fw-bold" href="#packages"><i class="bi bi-gem"></i> Gói VIP</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav" id="auth-nav-container">
@@ -41,110 +41,288 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="bg-dark text-white py-5 text-center" style="background-image: linear-gradient(135deg, #4f46e5 0%, #1e1b4b 100%);">
-        <div class="container py-4">
-            <h1 class="display-4 fw-bold">Chào Mừng Bạn Đến Với BookShop</h1>
-            <p class="lead">Hàng ngàn cuốn sách hay đang chờ đón bạn. Đăng ký VIP để đọc miễn phí kho sách độc quyền!</p>
-            <a href="#packages" class="btn btn-warning btn-lg fw-bold px-4 py-2 mt-3 text-dark">
-                <i class="bi bi-gem"></i> Đăng Ký Hội Viên VIP
-            </a>
+    <!-- Hero / Carousel Section -->
+    <div id="heroCarousel" class="carousel slide carousel-fade mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-    </header>
+        <div class="carousel-inner">
+            <!-- Slide 1: VIP Package Promo -->
+            <div class="carousel-item active" style="background: radial-gradient(circle at top, #1e3a8a 0%, #09090b 80%); height: 450px;">
+                <div class="container h-100 d-flex align-items-center justify-content-center text-center">
+                    <div class="carousel-glass-caption px-4 py-5 animate-fade-in-up">
+                        <span class="badge bg-warning text-dark px-3 py-1 rounded-pill fw-bold mb-3">ĐẶC QUYỀN HỘI VIÊN</span>
+                        <h2 class="display-6 fw-extrabold text-white" style="font-family: var(--font-outfit); font-weight: 800;">
+                            MỞ KHÓA KHO SÁCH <span class="text-highlight">VIP</span> ĐỘC QUYỀN
+                        </h2>
+                        <p class="text-muted small my-3">
+                            Đọc và nghe hàng ngàn cuốn sách bán chạy nhất hoàn toàn miễn phí khi nâng cấp gói VIP hôm nay.
+                        </p>
+                        <a href="#packages" class="btn btn-waka px-4 py-2 mt-2">Xem Ngay Các Gói</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2: Audiobook Promo -->
+            <div class="carousel-item" style="background: radial-gradient(circle at top, #0f172a 0%, #09090b 80%); height: 450px;">
+                <div class="container h-100 d-flex align-items-center justify-content-center text-center">
+                    <div class="carousel-glass-caption px-4 py-5">
+                        <span class="badge bg-success text-white px-3 py-1 rounded-pill fw-bold mb-3">TÍNH NĂNG MỚI</span>
+                        <h2 class="display-6 fw-extrabold text-white" style="font-family: var(--font-outfit); font-weight: 800;">
+                            TRẢI NGHIỆM SÁCH NÓI <span class="text-highlight">AUDIOBOOK</span>
+                        </h2>
+                        <p class="text-muted small my-3">
+                            Hệ thống âm thanh sống động, giọng đọc AI chuyên nghiệp giúp bạn nghe sách mọi lúc mọi nơi.
+                        </p>
+                        <a href="#books" class="btn btn-waka px-4 py-2 mt-2">Khám Phá Thư Viện</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3: Paper Book Discount -->
+            <div class="carousel-item" style="background: radial-gradient(circle at top, #311042 0%, #09090b 80%); height: 450px;">
+                <div class="container h-100 d-flex align-items-center justify-content-center text-center">
+                    <div class="carousel-glass-caption px-4 py-5">
+                        <span class="badge bg-danger text-white px-3 py-1 rounded-pill fw-bold mb-3">ƯU ĐÃI THÀNH VIÊN</span>
+                        <h2 class="display-6 fw-extrabold text-white" style="font-family: var(--font-outfit); font-weight: 800;">
+                            GIẢM GIÁ <span class="text-gold">15% SÁCH GIẤY</span> CHO VIP
+                        </h2>
+                        <p class="text-muted small my-3">
+                            Đặt mua sách giấy chính hãng giao tận nhà với giá ưu đãi riêng cho các tài khoản VIP của BookShop.
+                        </p>
+                        <a href="#packages" class="btn btn-waka px-4 py-2 mt-2">Nâng Cấp VIP Ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Trước</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Sau</span>
+        </button>
+    </div>
+
+    <!-- VIP Packages Section -->
+    <section class="py-5" id="packages">
+        <div class="container py-4">
+            <div class="row mb-5 text-center">
+                <div class="col-lg-6 mx-auto">
+                    <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-2">BẢNG GIÁ DỊCH VỤ</span>
+                    <h2 class="fw-bold fs-1">Chọn Gói Hội Viên</h2>
+                    <p class="text-muted">Nâng cấp VIP để nhận đặc quyền truy cập toàn bộ tài nguyên sách.</p>
+                </div>
+            </div>
+            <!-- VIP Packages list populated by js/vip.js -->
+            <div class="row justify-content-center" id="vip-packages-list">
+                <!-- Packages will be generated dynamically by js/vip.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Comparison Section -->
+    <section class="py-5 bg-dark bg-opacity-20 border-top border-secondary border-opacity-10">
+        <div class="container py-4">
+            <div class="row mb-5 text-center">
+                <div class="col-lg-6 mx-auto">
+                    <h2 class="fw-bold">Đặc Quyền Hội Viên</h2>
+                    <p class="text-muted">So sánh quyền lợi giữa tài khoản Thường và Hội viên VIP.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="glass-card p-4 overflow-hidden border border-secondary border-opacity-25">
+                        <table class="table waka-table m-0">
+                            <thead>
+                                <tr>
+                                    <th scope="col" style="width: 50%;">Tính Năng Đặc Quyền</th>
+                                    <th scope="col" class="text-center" style="width: 25%;">Thành Viên Thường</th>
+                                    <th scope="col" class="text-center text-highlight" style="width: 25%;">Hội Viên VIP</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Đọc thử một phần sách</td>
+                                    <td class="text-center text-success"><i class="bi bi-check2 fs-5"></i></td>
+                                    <td class="text-center text-success"><i class="bi bi-check2 fs-5"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Đọc không giới hạn kho sách VIP</td>
+                                    <td class="text-center text-danger"><i class="bi bi-dash-lg fs-5"></i></td>
+                                    <td class="text-center text-success"><i class="bi bi-check2-all fs-5 text-highlight"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Không chứa quảng cáo làm phiền</td>
+                                    <td class="text-center text-danger"><i class="bi bi-dash-lg fs-5"></i></td>
+                                    <td class="text-center text-success"><i class="bi bi-check2 fs-5 text-highlight"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Tải sách đọc Offline (Trên ứng dụng di động)</td>
+                                    <td class="text-center text-danger"><i class="bi bi-dash-lg fs-5"></i></td>
+                                    <td class="text-center text-success"><i class="bi bi-check2 fs-5 text-highlight"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Quyền mua sách giấy giảm giá 15%</td>
+                                    <td class="text-center text-danger"><i class="bi bi-dash-lg fs-5"></i></td>
+                                    <td class="text-center text-success"><i class="bi bi-check2 fs-5 text-highlight"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Books Section -->
     <section class="container py-5" id="books">
         <div class="row mb-4">
             <div class="col">
-                <h2 class="fw-bold"><i class="bi bi-bookmark-star-fill text-primary"></i> Kho Sách Nổi Bật</h2>
-                <p class="text-muted">Đọc thử sách thường hoặc nâng cấp VIP để mở khóa kho sách VIP.</p>
+                <h2 class="fw-bold"><i class="bi bi-bookmark-star-fill text-highlight"></i> Kho Sách Nổi Bật</h2>
+                <p class="text-muted">Khám phá các đầu sách bán chạy nhất hành tinh tại cửa hàng của chúng tôi.</p>
             </div>
         </div>
         <div class="row g-4">
             <!-- Book 1 (Normal) -->
             <div class="col-md-3">
-                <div class="card h-100">
-                    <div class="p-4 bg-light text-center" style="height: 200px; display: flex; align-items: center; justify-content: center;">
-                        <i class="bi bi-journal-text fs-1 text-secondary"></i>
+                <div class="card glass-card h-100 border border-secondary border-opacity-25">
+                    <div class="p-4 bg-white bg-opacity-5 text-center d-flex align-items-center justify-content-center" style="height: 220px; border-bottom: 1px solid rgba(255,255,255,0.05)">
+                        <i class="bi bi-journal-text fs-1 text-muted"></i>
                     </div>
-                    <div class="card-body d-flex flex-column">
-                        <span class="badge bg-secondary mb-2 align-self-start">Sách Thường</span>
-                        <h5 class="card-title fw-bold">Đắc Nhân Tâm</h5>
-                        <p class="text-muted small">Dale Carnegie</p>
-                        <h6 class="text-primary mt-auto">86,000đ</h6>
-                        <button class="btn btn-outline-primary btn-sm w-100 mt-2">Thêm Vào Giỏ</button>
+                    <div class="card-body d-flex flex-column p-3">
+                        <span class="badge bg-secondary mb-2 align-self-start">Sách Giấy</span>
+                        <h5 class="card-title fw-bold text-white fs-6">Đắc Nhân Tâm</h5>
+                        <p class="text-muted small mb-2">Dale Carnegie</p>
+                        <h6 class="text-highlight mt-auto">86,000đ</h6>
+                        <button class="btn btn-waka-outline btn-sm w-100 mt-2 py-2">Mua Sách</button>
                     </div>
                 </div>
             </div>
             <!-- Book 2 (VIP exclusive) -->
             <div class="col-md-3">
-                <div class="card h-100 border-warning">
-                    <div class="p-4 bg-warning-subtle text-center" style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                <div class="card glass-card h-100 border border-warning border-opacity-30">
+                    <div class="p-4 bg-warning bg-opacity-5 text-center d-flex align-items-center justify-content-center" style="height: 220px; border-bottom: 1px solid rgba(255,255,255,0.05)">
                         <i class="bi bi-journal-bookmark-fill fs-1 text-warning"></i>
                     </div>
-                    <div class="card-body d-flex flex-column">
-                        <span class="badge bg-warning text-dark mb-2 align-self-start">Đặc quyền VIP</span>
-                        <h5 class="card-title fw-bold">Chiến Tranh Tiền Tệ</h5>
-                        <p class="text-muted small">Tống Hồng Binh</p>
-                        <h6 class="text-warning-emphasis mt-auto">Đọc miễn phí với VIP</h6>
-                        <a href="#packages" class="btn btn-warning btn-sm w-100 mt-2 text-dark fw-bold">Đọc Ngay (VIP)</a>
+                    <div class="card-body d-flex flex-column p-3">
+                        <span class="badge bg-warning text-dark mb-2 align-self-start">Đọc VIP</span>
+                        <h5 class="card-title fw-bold text-white fs-6">Chiến Tranh Tiền Tệ</h5>
+                        <p class="text-muted small mb-2">Tống Hồng Binh</p>
+                        <h6 class="text-gold mt-auto">Miễn phí với VIP</h6>
+                        <a href="#packages" class="btn btn-waka btn-sm w-100 mt-2 py-2 text-dark fw-bold">Đọc Ngay (VIP)</a>
                     </div>
                 </div>
             </div>
             <!-- Book 3 (VIP exclusive) -->
             <div class="col-md-3">
-                <div class="card h-100 border-warning">
-                    <div class="p-4 bg-warning-subtle text-center" style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                <div class="card glass-card h-100 border border-warning border-opacity-30">
+                    <div class="p-4 bg-warning bg-opacity-5 text-center d-flex align-items-center justify-content-center" style="height: 220px; border-bottom: 1px solid rgba(255,255,255,0.05)">
                         <i class="bi bi-journal-bookmark-fill fs-1 text-warning"></i>
                     </div>
-                    <div class="card-body d-flex flex-column">
-                        <span class="badge bg-warning text-dark mb-2 align-self-start">Đặc quyền VIP</span>
-                        <h5 class="card-title fw-bold">Nhà Giả Kim</h5>
-                        <p class="text-muted small">Paulo Coelho</p>
-                        <h6 class="text-warning-emphasis mt-auto">Đọc miễn phí với VIP</h6>
-                        <a href="#packages" class="btn btn-warning btn-sm w-100 mt-2 text-dark fw-bold">Đọc Ngay (VIP)</a>
+                    <div class="card-body d-flex flex-column p-3">
+                        <span class="badge bg-warning text-dark mb-2 align-self-start">Đọc VIP</span>
+                        <h5 class="card-title fw-bold text-white fs-6">Nhà Giả Kim</h5>
+                        <p class="text-muted small mb-2">Paulo Coelho</p>
+                        <h6 class="text-gold mt-auto">Miễn phí với VIP</h6>
+                        <a href="#packages" class="btn btn-waka btn-sm w-100 mt-2 py-2 text-dark fw-bold">Đọc Ngay (VIP)</a>
                     </div>
                 </div>
             </div>
             <!-- Book 4 (Normal) -->
             <div class="col-md-3">
-                <div class="card h-100">
-                    <div class="p-4 bg-light text-center" style="height: 200px; display: flex; align-items: center; justify-content: center;">
-                        <i class="bi bi-journal-text fs-1 text-secondary"></i>
+                <div class="card glass-card h-100 border border-secondary border-opacity-25">
+                    <div class="p-4 bg-white bg-opacity-5 text-center d-flex align-items-center justify-content-center" style="height: 220px; border-bottom: 1px solid rgba(255,255,255,0.05)">
+                        <i class="bi bi-journal-text fs-1 text-muted"></i>
                     </div>
-                    <div class="card-body d-flex flex-column">
-                        <span class="badge bg-secondary mb-2 align-self-start">Sách Thường</span>
-                        <h5 class="card-title fw-bold">Nghĩ Giàu Làm Giàu</h5>
-                        <p class="text-muted small">Napoleon Hill</p>
-                        <h6 class="text-primary mt-auto">95,000đ</h6>
-                        <button class="btn btn-outline-primary btn-sm w-100 mt-2">Thêm Vào Giỏ</button>
+                    <div class="card-body d-flex flex-column p-3">
+                        <span class="badge bg-secondary mb-2 align-self-start">Sách Giấy</span>
+                        <h5 class="card-title fw-bold text-white fs-6">Nghĩ Giàu Làm Giàu</h5>
+                        <p class="text-muted small mb-2">Napoleon Hill</p>
+                        <h6 class="text-highlight mt-auto">95,000đ</h6>
+                        <button class="btn btn-waka-outline btn-sm w-100 mt-2 py-2">Mua Sách</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- VIP Packages Section -->
-    <section class="bg-light py-5 border-top border-bottom" id="packages">
-        <div class="container">
+    <!-- FAQ Section -->
+    <section class="py-5 border-top border-secondary border-opacity-10">
+        <div class="container py-4">
             <div class="row mb-5 text-center">
                 <div class="col-lg-6 mx-auto">
-                    <span class="badge bg-warning text-dark px-3 py-2 rounded-pill uppercase fw-bold mb-2">GÓI VIP ĐỘC QUYỀN</span>
-                    <h2 class="fw-bold">Nâng Cấp Hội Viên VIP</h2>
-                    <p class="text-muted">Chọn gói hội viên phù hợp với nhu cầu đọc sách của bạn. Huỷ bất cứ lúc nào.</p>
+                    <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-2">HỖ TRỢ</span>
+                    <h2 class="fw-bold fs-2">Câu Hỏi Thường Gặp</h2>
+                    <p class="text-muted">Giải đáp các thắc mắc phổ biến nhất về gói Hội viên VIP.</p>
                 </div>
             </div>
-            <!-- VIP Packages list populated by js/vip.js -->
-            <div class="row justify-content-center" id="vip-packages-list">
-                <!-- Packages will be generated here -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <!-- Q1 -->
+                        <div class="accordion-item accordion-item-dark shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button accordion-button-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Hội viên VIP có quyền lợi gì đặc biệt?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body accordion-body-dark">
+                                    Khi đăng ký gói Hội viên VIP, bạn có quyền truy cập đọc và nghe không giới hạn toàn bộ kho sách điện tử (Ebook) và sách nói (Audiobook) bản quyền có nhãn VIP. Ngoài ra, giao diện đọc sẽ hoàn toàn không có quảng cáo, hỗ trợ tải sách ngoại tuyến và nhận ưu đãi giảm 15% khi đặt mua sách giấy.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Q2 -->
+                        <div class="accordion-item accordion-item-dark shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button accordion-button-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    BookShop hỗ trợ những phương thức thanh toán nào?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body accordion-body-dark">
+                                    Chúng tôi hỗ trợ thanh toán cực kỳ tiện lợi thông qua ví điện tử <strong>MoMo</strong> (quét mã QR hoặc xác thực qua app) và cổng thanh toán <strong>VNPAY</strong> (hỗ trợ ứng dụng ngân hàng quét QR-Pay, thẻ ATM nội địa, hoặc thẻ quốc tế Visa/Mastercard).
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Q3 -->
+                        <div class="accordion-item accordion-item-dark shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button accordion-button-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Tôi có thể đọc sách VIP trên nhiều thiết bị cùng lúc không?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body accordion-body-dark">
+                                    Có. Tài khoản VIP của bạn có thể đăng nhập và đồng bộ tiến trình đọc sách trên tối đa <strong>3 thiết bị</strong> cùng lúc (Bao gồm điện thoại, máy tính bảng và máy tính cá nhân).
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Q4 -->
+                        <div class="accordion-item accordion-item-dark shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button accordion-button-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Sau khi hết hạn gói VIP, tài khoản của tôi sẽ thế nào?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body accordion-body-dark">
+                                    Khi hết hạn sử dụng VIP, tài khoản của bạn sẽ tự động chuyển về trạng thái thành viên thường. Bạn sẽ không thể tiếp tục đọc các đầu sách VIP nữa trừ khi thực hiện gia hạn. Các dữ liệu như dấu trang (bookmark), ghi chú và danh sách sách yêu thích vẫn sẽ được lưu trữ an toàn chờ bạn kích hoạt lại VIP.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white border-top py-4 mt-auto">
+    <footer class="bg-dark bg-opacity-40 border-top border-secondary border-opacity-10 py-5 mt-5">
         <div class="container text-center">
-            <p class="text-muted mb-0">&copy; 2026 BookShop. Bản quyền giao diện thuộc về đồ án TMDT.</p>
+            <p class="text-muted mb-0">&copy; 2026 BookShop. Giao diện được lấy cảm hứng từ waka.vn.</p>
         </div>
     </footer>
 

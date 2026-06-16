@@ -11,12 +11,12 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-light d-flex flex-column min-vh-100">
+<body class="bg-dark text-white d-flex flex-column min-vh-100" style="background: radial-gradient(circle at top, #065f46 0%, #09090b 80%);">
 
     <!-- Header / Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary border-opacity-10 py-3 sticky-top">
         <div class="container">
-            <a class="navbar-brand fs-3" href="index.html">
+            <a class="navbar-brand fs-3 fw-bold text-highlight" href="index.html">
                 <i class="bi bi-book-half"></i> BookShop
             </a>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -30,37 +30,37 @@
     <!-- Main Content -->
     <div class="container py-5 my-auto">
         <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card p-5 shadow-sm text-center bg-white border-success">
+            <div class="col-md-6 col-lg-5">
+                <div class="glass-card p-5 text-center border-success border-opacity-30 bg-black bg-opacity-30 shadow-lg">
                     <div class="mb-4">
-                        <i class="bi bi-patch-check-fill text-success" style="font-size: 5rem;"></i>
+                        <i class="bi bi-patch-check-fill text-success" style="font-size: 5rem; filter: drop-shadow(0 0 15px rgba(16, 185, 129, 0.4));"></i>
                     </div>
-                    <h2 class="fw-bold text-success">Chào Mừng Hội Viên VIP!</h2>
-                    <p class="text-muted leading">Thanh toán giao dịch hoàn tất. Tài khoản của bạn đã được kích hoạt đặc quyền VIP thành công.</p>
+                    <h2 class="fw-bold text-success mb-2" style="font-family: var(--font-outfit);">Kích Hoạt VIP Thành Công!</h2>
+                    <p class="text-muted small px-3">Giao dịch đã được ghi nhận. Tài khoản của bạn đã được nâng cấp đặc quyền hội viên VIP thành công.</p>
                     
-                    <div class="bg-light p-4 rounded text-start my-4">
-                        <h6 class="fw-bold border-bottom pb-2 mb-3 text-secondary">Thông tin giao dịch</h6>
+                    <div class="bg-white bg-opacity-5 p-4 rounded-3 text-start my-4 border border-secondary border-opacity-10">
+                        <h6 class="fw-bold border-bottom border-secondary border-opacity-10 pb-2 mb-3 text-white small">TÓM TẮT GIAO DỊCH</h6>
                         <div class="d-flex justify-content-between mb-2">
-                            <span class="text-muted">Gói dịch vụ:</span>
-                            <span class="fw-bold" id="success-package-name">...</span>
+                            <span class="text-muted small">Gói hội viên:</span>
+                            <span class="fw-bold text-white" id="success-package-name">...</span>
                         </div>
                         <div class="d-flex justify-content-between mb-2">
-                            <span class="text-muted">Tổng tiền:</span>
-                            <span class="fw-bold text-primary" id="success-amount">...đ</span>
+                            <span class="text-muted small">Tổng tiền thanh toán:</span>
+                            <span class="fw-bold text-highlight" id="success-amount">...đ</span>
                         </div>
                         <div class="d-flex justify-content-between mb-2">
-                            <span class="text-muted">Hình thức thanh toán:</span>
-                            <span class="fw-bold text-uppercase" id="success-method">...</span>
+                            <span class="text-muted small">Cổng thanh toán:</span>
+                            <span class="fw-bold text-uppercase text-white" id="success-method">...</span>
                         </div>
                         <div class="d-flex justify-content-between">
-                            <span class="text-muted">Hạn sử dụng VIP mới:</span>
-                            <span class="fw-bold text-warning-emphasis" id="success-expiry">...</span>
+                            <span class="text-muted small">Hạn sử dụng VIP mới:</span>
+                            <span class="fw-bold text-gold" id="success-expiry">...</span>
                         </div>
                     </div>
 
-                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                        <a href="index.html" class="btn btn-primary btn-lg px-4 gap-3 fw-bold">Bắt đầu trải nghiệm kho sách</a>
-                        <a href="profile.html" class="btn btn-outline-secondary btn-lg px-4">Xem lịch sử giao dịch</a>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mt-2">
+                        <a href="index.html" class="btn btn-waka btn-lg px-4 fw-bold">Bắt đầu trải nghiệm</a>
+                        <a href="profile.html" class="btn btn-waka-outline btn-lg px-4">Xem lịch sử</a>
                     </div>
                 </div>
             </div>
@@ -68,9 +68,9 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-white border-top py-4 mt-auto">
+    <footer class="bg-dark bg-opacity-40 border-top border-secondary border-opacity-10 py-4 mt-auto">
         <div class="container text-center">
-            <p class="text-muted mb-0">&copy; 2026 BookShop. Bản quyền giao diện thuộc về đồ án TMDT.</p>
+            <p class="text-muted mb-0">&copy; 2026 BookShop. Cám ơn bạn đã sử dụng dịch vụ.</p>
         </div>
     </footer>
 
