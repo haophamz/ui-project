@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShop Admin</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+
+    <div class="logo">
+        <i class="fa-solid fa-book-open"></i>
+        BookShop
+    </div>
+
+    <div class="title">
+        Quản trị hệ thống
+    </div>
+
+</header>
+
+<div class="container">
+
+    <!-- UC12 -->
+
+    <div class="card">
+
+        <h2>
+            <i class="fa-solid fa-book"></i>
+            Quản lý Ebook
+        </h2>
+
+        <div class="toolbar">
+
+            <button class="add">
+                <i class="fa-solid fa-plus"></i>
+                Thêm Ebook
+            </button>
+
+            <input type="text" placeholder="Tìm kiếm Ebook...">
+
+        </div>
+
+        <table>
+
+            <tr>
+
+                <th>ID</th>
+
+                <th>Tên Ebook</th>
+
+                <th>Tác giả</th>
+
+                <th>Giá</th>
+
+                <th>Thao tác</th>
+
+            </tr>
+
+            <tr>
+
+                <td>1</td>
+
+                <td>Lập trình Java</td>
+
+                <td>Nguyễn Văn A</td>
+
+                <td>99.000đ</td>
+
+                <td>
+
+                    <button class="edit">
+                        Sửa
+                    </button>
+
+                    <button class="delete">
+                        Xóa
+                    </button>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>2</td>
+
+                <td>HTML CSS</td>
+
+                <td>Trần Văn B</td>
+
+                <td>79.000đ</td>
+
+                <td>
+
+                    <button class="edit">
+                        Sửa
+                    </button>
+
+                    <button class="delete">
+                        Xóa
+                    </button>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+    <!-- UC13 -->
+
+    <div class="card">
+
+        <h2>
+
+            <i class="fa-solid fa-users"></i>
+
+            Quản lý Hội viên
+
+        </h2>
+
+        <div class="toolbar">
+
+            <button class="add">
+
+                <i class="fa-solid fa-user-plus"></i>
+
+                Thêm hội viên
+
+            </button>
+
+            <input type="text" placeholder="Tìm kiếm hội viên...">
+
+        </div>
+
+        <table>
+
+            <tr>
+
+                <th>ID</th>
+
+                <th>Họ tên</th>
+
+                <th>Email</th>
+
+                <th>Loại</th>
+
+                <th>Hạn VIP</th>
+
+                <th>Thao tác</th>
+
+            </tr>
+
+            <tr>
+
+                <td>1</td>
+
+                <td>Nguyễn Văn A</td>
+
+                <td>vana@gmail.com</td>
+
+                <td>
+
+                    <span class="vip">
+
+                        VIP
+
+                    </span>
+
+                </td>
+
+                <td>31/12/2026</td>
+
+                <td>
+
+                    <button class="edit">
+
+                        Sửa
+
+                    </button>
+
+                    <button class="delete">
+
+                        Khóa
+
+                    </button>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>2</td>
+
+                <td>Trần Văn B</td>
+
+                <td>tranb@gmail.com</td>
+
+                <td>
+
+                    <span class="normal">
+
+                        Thường
+
+                    </span>
+
+                </td>
+
+                <td>-</td>
+
+                <td>
+
+                    <button class="edit">
+
+                        Sửa
+
+                    </button>
+
+                    <button class="delete">
+
+                        Khóa
+
+                    </button>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+</body>
+</html>
